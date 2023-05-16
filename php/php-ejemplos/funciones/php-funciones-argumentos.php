@@ -35,6 +35,7 @@ function hacercafé2($tipos = array("capuchino"), $fabricanteCafé = null)
     $aparato = is_null($fabricanteCafé) ? "las manos" : $fabricanteCafé;
     return "Hacer una taza de " . join(", ", $tipos) . " con $aparato.";
 }
+//el join hace la concatenacion de los valores del arreglo.  se puede usar explode
 echo hacercafé2(), '<br>';
 echo hacercafé2(array("capuchino", "lavazza"), "una tetera"), '<br>';
 
@@ -48,3 +49,4 @@ function haceryogur($sabor, $tipo = "acidófilo")
 }
  
 echo haceryogur("frambuesa"), '<br>';
+//los valores por defectos se ponen a la derecha para poder llamarlos despues
